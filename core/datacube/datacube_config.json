@@ -1,0 +1,23 @@
+{
+  "platform": "kscada_core",
+  "mesh_network": {
+    "enabled": true,
+    "port": 9012,
+    "peers": [],
+    "broadcast_interval": 5000
+  },
+  "websocket": {
+    "port": 8012,
+    "path": "/ws/kscada/core/datacube",
+    "ping_interval": 30,
+    "ping_timeout": 10
+  },
+  "database": {
+    "schema": "kscada_core_datacube",
+    "tables": {
+      "nodes": "kscada_core_nodes",
+      "edges": "kscada_core_edges",
+      "templates": "kscada_core_templates"
+    }
+  }
+}
